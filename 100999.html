@@ -1,0 +1,887 @@
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+ 
+   	
+	
+	
+
+
+	
+
+
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>
+	BMW Group 
+	</title>
+	<!--
+		BMW Group Build:  3670  DB: IBSDataSource 
+	-->
+	<script language="javascript1.2">
+	var IE4 = (document.all) ? 1 : 0;
+	var NS4 = (document.layers) ? 1 : 0;
+	
+	var docAll = (document.all) ? 1 : 0;
+	var docLayers = (document.layers) ? 1 : 0;
+	var docElById = (document.getElementById) ? 1 : 0;
+	
+	var browserIsNS4 = (NS4) ? 1 : 0;
+	var browserIsIE4 = (IE4) ? 1 : 0;
+	
+	//var isOpera = navigator.userAgent.toLowerCase().indexOf("opera") ? 1 : 0;
+	
+	var nuag = navigator.userAgent.toLowerCase();
+	if ((nuag.indexOf("mozilla")>-1) && (nuag.indexOf("msie")==-1) && (nuag.indexOf("opera")==-1) && (nuag.indexOf("/4.")==-1)) var browserIsMozilla = true;
+	if ((nuag.indexOf("mozilla")>-1) && (nuag.indexOf("msie")==-1) && (nuag.indexOf("opera")==-1) && (nuag.indexOf("/4.")==-1) && (nuag.indexOf("1.4")>-1)) var browserIsBadMozilla = true;
+	else if (nuag.indexOf("safari")>-1) var browserIsSafari = true;
+	
+	//alert(nuag);
+	
+	var browserPlatform = navigator.platform;
+	if (browserPlatform.indexOf("Mac")>-1) var clientIsMac = true;
+	else if (browserPlatform.indexOf("Win")>-1) var clientIsWin = true;
+	else var clientIsOther = true;
+
+	var pleaseWaitUntilReadyMsg = 'Please wait until your previous action has been fully completed.';
+
+	function submitPT()
+	{
+	
+		document.forms[0].action = "/ibs/Servlets/ibs/controller/pt";
+		document.forms[0].target.value=submitPT.arguments[1];
+		commonSubmit(submitPT.arguments[0], submitPT.arguments[2], submitPT.arguments[3], submitPT.arguments[4]);
+	}
+
+	function submitPTEXT()
+	{
+		document.forms[0].action = "/ibs/Servlets/ibs/controller/ptext";
+		document.forms[0].target.value=submitPTEXT.arguments[1];
+		commonSubmit(submitPTEXT.arguments[0], submitPTEXT.arguments[2], submitPTEXT.arguments[3], submitPTEXT.arguments[4]);
+	}
+
+    function submitVK() {
+	    document.forms[0].target.value=submitVK.arguments[1];
+	    document.forms[0].param1.value = submitVK.arguments[2];
+		commonSubmit(submitVK.arguments[0]);
+	}
+
+	function submitPA(){
+	   
+		    document.forms[0].action = "/ibs/Servlets/ibs/controller/pa";
+	  	
+	    document.forms[0].target.value = submitPA.arguments[1];
+	    document.forms[0].param1.value = submitPA.arguments[2];
+	    commonSubmit(submitPA.arguments[0], submitPA.arguments[2], submitPA.arguments[3], submitPA.arguments[4]);
+	}
+
+	function submitPAUS(){
+	    document.forms[0].target.value = submitPAUS.arguments[1];
+	    document.forms[0].param1.value = submitPAUS.arguments[2];
+	    document.forms[0].param2.value = submitPAUS.arguments[3];
+	    commonSubmit(submitPAUS.arguments[0], submitPAUS.arguments[2], submitPAUS.arguments[3], submitPAUS.arguments[4]);
+	}
+
+	function submitASSToSM(){
+        document.forms[0].action = "/ibs/Servlets/ibs/controller/sm";
+	    document.forms[0].target.value = submitASSToSM.arguments[1];
+	    document.forms[0].param1.value = submitASSToSM.arguments[2];
+	    commonSubmit(submitASSToSM.arguments[0], submitASSToSM.arguments[2], submitASSToSM.arguments[3], submitASSToSM.arguments[4]);
+	}
+
+	function submitRSS() {
+	alert('submitRSS() in TemplatePrint');
+	  	document.forms[0].action = "/ibs/Servlets/ibs/controller/rss";
+	  //  alert(document.forms[0].action );
+	    document.forms[0].target.value=submitRSS.arguments[1];
+		commonSubmit(submitRSS.arguments[0], submitRSS.arguments[2], submitRSS.arguments[3], submitRSS.arguments[4]);
+	}
+
+
+	function submitSMToASS(){
+	    document.content.ereignis.value = submitSMToASS.arguments[0];
+		document.content.event.value = submitSMToASS.arguments[1];
+		document.content.submit();
+	}
+
+	function submitASS(){
+
+		document.content.ereignis.value = submitASS.arguments[0];
+		document.content.event.value = submitASS.arguments[1];
+		document.content.target.value = submitASS.arguments[2];
+		document.content.param1.value = submitASS.arguments[3];
+		document.content.submit();
+	}
+
+	function showHelp() {
+		doShowHelp( 'null');
+	}
+
+	
+	function doShowHelp( msgKey) {
+		window.open('/ibs/Servlets/ibs/jsp/common/CommonHelp.jsp?helpMsgKey=' + msgKey, 'Hilfe',
+			'width=600,height=600,left=50,top=0,resizable=yes,scrollbars=yes');
+	}
+
+	function showInfo(titleKey,infoKey) {
+		window.open('/ibs/Servlets/ibs/jsp/common/CommonInfo.jsp?titleKey='+titleKey+'&infoKey='+infoKey, 'info',
+			'width=600,height=600,left=50,top=0,resizable=yes,scrollbars=yes');
+	}
+
+
+
+	function ibsPrintAdmin() {
+		window.open('/ibs/Servlets/ibs/controller/satellit?event=__activate_and_reset&target=druckansicht&param1=IBSPRINTADMIN');
+	}
+
+	msie    = "Microsoft Internet Explorer";
+	ne      = "Netscape";
+	browser = "undefined";
+    //@a.bock 18112003 entfernt, da geschuetzte JS Variable
+    //var history=0;
+
+
+    loaded = false;
+    submitCounter = 0;
+
+    var gOver = new Array ();
+    var gClik = new Array ();
+    var gBack;
+    
+	var defaultSubmitButton = "";
+	var defaultSubmitLink = "";
+	var textAreaHasFocus = false;
+
+	function checkForEnter(e) {
+		if (!browserIsBadMozilla && !browserIsMozilla && !browserIsSafari) {
+			if (window.event) {
+				var usedKey = window.event.keyCode;
+			}
+			else {
+				var usedKey = e.which;
+			}
+			if (usedKey == 13 && defaultSubmitButton.length > 0 && !textAreaHasFocus) {
+				eval("document.forms[0]."+defaultSubmitButton+".click();");
+			}
+			else if (usedKey == 13 && defaultSubmitLink.length > 0 && !textAreaHasFocus) {
+				eval(defaultSubmitLink);
+			}
+		}
+	}
+	
+	if (!browserIsMozilla && !browserIsBadMozilla) document.onkeypress=checkForEnter;
+	else if (browserIsMozilla || browserIsBadMozilla) document.addEventListener("keyup",checkForEnter,true);
+
+	</script>
+	
+	
+	<link rel="stylesheet" type="text/css" href="/ibs/css/main.css">
+<link rel="stylesheet" type="text/css" href="/ibs/css/navi.css">
+
+
+	<!--<script language="javascript1.2" src="/ibs/javascript/browser.js"></script>-->
+
+    <script language="javascript1.2" src="/ibs/javascript/nc215.js"></script>
+	<script language="javascript1.2" src="/ibs/javascript/func.js"></script>
+	<!-- deaktiviert, das org BMW-Javascript ist am ende dieses Files eingefuegt -->
+	<!--
+		<script language="javascript1.2" src="/ibs/javascript/tooltip.js"></script>
+	-->
+	<script type="text/javascript">
+	<!--
+	function printIt() {
+		window.focus();
+		if (self.print) {
+			window.print();
+		}
+		else {
+			if (clientIsMac) alert("The browser you have used does not recognise the Javascript print function.\n to print, please use the Apple\+p key combination.");
+			else alert("The browser you have used does not recognise the Javascript print function.\n to print, please use the Ctrl\+ p key combination.");
+		}
+	}
+	//-->
+	</script>
+	<link rel="shortcut icon" href="/ibs/images/common/favicon.ico" /> 
+</head>
+
+
+
+    
+    
+
+
+<body  text="#000000" bgcolor="#FFFFFF" link="#000000" alink="#000000" vlink="#000000"  marginwidth="0" vspace="0" marginheight="0" valign="top" leftmargin="0" topmargin="0" onload="window.top.focus();">
+<form name="content" action="/ibs/Servlets/ibs/controller/satellit" method="post"   >
+
+	<input type="hidden" name="ereignis" value="">
+	<input type="hidden" name="target" value="">
+	<input type="hidden" name="event" value="_revert">
+	<input type="hidden" name="param1" value="">
+	<input type="hidden" name="param2" value="">
+	<input type="hidden" name="param3" value="">
+	<input type="hidden" name="menuOpenNodeId" value="">
+	<input type="hidden" name="menuCloseNodeId" value="">
+	<input type="hidden" name="menuNodeId" value="">
+ 
+ <input type="hidden" name="BMW_UTCJ2EE_TOKEN" value="ca83ae394a7d49a548406a7ad4cc22f"/>
+ 
+
+		<input type="hidden" name="out_ibs_token_id" value="hht7yOXesxFTCQICgQrJqHlDXrUvbp0lg2fF8v49QHY9JMac3k-u!-821516818!1479545513438">
+		<input type="hidden" name="out_ibs_intern_extern" value="true">
+		<input type="hidden" name="out_ibs_application_component" value="SM">
+		<input type="hidden" name="out_ibs_language_id" value="27">
+		<input type="hidden" name="event_do_not_care" value="">
+
+		<input type="hidden" name="out_ibs_is_azubi" value="false">
+
+
+<br />
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	
+	<tr>
+		<td width="6">&nbsp;<br></td>
+		<td width="94"><img src="/ibs/images/common/internet/logo_bmwgroup.gif" align="left"><br></td>
+		<td align="right">
+			<table>
+				<tr>
+					<td><img src="/ibs/images/common/internet/logo_bmw_mini.jpg" align="right"><br></td>
+					<td width="145">&nbsp;<br></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/ibs/images/common/spacer.gif" height="36"><br></td>
+	</tr>
+	
+	<tr>
+		<td width="6">&nbsp;<br /></td>
+		<td valign="top">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+	<td>
+      <font class="hl1">
+            <img border="0" alt="" src="/ibs/images/common/internet/en/headlines/h_sm_jobs.gif">
+	  </font>
+    </td>
+    
+</tr>
+<tr>
+	<td colspan="2">
+      <font class="hl5">
+            
+      </font>
+    </td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br></td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- set the tracking details for this page -->
+
+
+
+
+
+<!-- Adobe DTM tracking start tag -->
+
+		<script src="//assets.adobedtm.com/708da42fed7ed52d358531e73bd4bb0e4be691e5/satelliteLib-a0957e5412e7469da08bd2519224adb073435b31.js"></script>
+	
+<!-- End Adobe DTM tracking start tag -->
+<script type="text/javascript" src="/ibs/javascript/adobedtm.js"></script>
+
+
+
+<script>
+digitalData = {
+	page : {
+		pageInfo : {
+			pageName : "IBS > Job market > Job posting > Job description",
+			previousPageName : "IBS > Job market > Search > Search result",
+			timeStamp : new Date().getTime(),
+			envWork : "prod",
+			language : "en",
+			geoRegion : "DE",
+			destinationURL : (window.location.host + window.location.pathname),
+			referringURL : document.referrer
+		},
+		category : {
+			virtualPage : false
+		}
+	}
+};
+
+	digitalData.page.category['pageLevel01'] = 'IBS';
+
+	digitalData.page.category['pageLevel02'] = 'Job market';
+
+	digitalData.page.category['pageLevel03'] = 'Job posting';
+
+
+function findCategoryById(id){
+	if(id == "1"){
+		return "Permanent positions";
+	}else if(id == "3"){
+		return "Student positions";
+	}else if(id == "10"){
+		return "Free text search";
+	}else if(id == "20"){
+		return "Job reference";
+	}
+	return "All postings";
+}
+
+function trackAndExternalLink(text, url, target){
+	if(digitalData.event == undefined){
+		digitalData.event = [];
+	}
+	var events = digitalData.event;
+	var newEvent = createEvent(text, "External Link", url, "");
+	events.push(newEvent);
+
+	
+		try{
+			ibsTrack("ibs_external_link");
+		}catch(e){
+			// ignore tracking errors
+		}
+	
+	setTimeout(function() {
+		if(target == undefined){
+			window.location.href=url;
+		}else{
+			window.open(url, target);
+		}
+	}, 500);
+}
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/ibs/javascript/intelliad.js"></script>
+
+<script type="text/javascript">
+function setOptOut() {
+	
+	setOptOutIntelliAd();	
+	setOptOutAdobeDTM();
+	
+}
+
+function setOptOutAdobeDTM() {
+	try{
+		if(digitalData.event == undefined){
+			digitalData.event = [];
+		}
+		var events = digitalData.event;
+		var newEvent = createEvent("", "Opt-Out", "", "");
+		newEvent.category.eventType = "Opt-Out";
+		events.push(newEvent);
+	
+		ibsTrack("ibs_opt-out");
+	}catch(e){
+		// ignore tracking errors
+	}
+}
+
+function setOptOutIntelliAd() {
+	try{
+		document.getElementById("intelliad").src="http://login.intelliad.de/optout.php?submitted=1";
+	}catch(e){
+		// ignore tracking errors
+	}
+}
+</script>
+
+
+<script>
+var targetGroup = "Pupils;Interns;Diplomates";
+var searchType = "1";
+var searchTerm = "";
+if(searchType == "10" 
+		|| searchType == "20"){
+	searchTerm = "null";
+}
+digitalData.page.attributes= {
+	searchTerm : searchTerm,
+	searchType : findCategoryById(searchType),
+	jobID : "100999",
+	jobName : "Expert Machine Learning (m/f)",
+	jobArea : "Software development",
+	jobLocation : "Ulm",
+	jobBusinessUnit : "BMW Car IT",
+	jobTargetGroup : targetGroup.split(";")
+};
+</script>
+
+<script language="javascript">
+	function trackAndApply(text, target) {
+		if(digitalData.event == undefined){
+			digitalData.event = [];
+		}
+		var events = digitalData.event;
+		var newEvent = createEvent(text, "Apply Online", target, "");
+		events.push(newEvent);
+		
+		
+			try{
+				ibsTrack("ibs_apply_online");
+			}catch(e){
+				// ignore tracking errors
+			}
+		
+		setTimeout(function() {
+			window.location.href=target;
+		}, 500);
+	}
+</script>
+
+<script language="javascript">
+	function trackAndPrint() {
+		if(digitalData.event == undefined){
+			digitalData.event = [];
+		}
+		var events = digitalData.event;
+		var newEvent = createEvent("Print Job", "Print", "", "");
+		events.push(newEvent);
+		
+		
+			try{
+				ibsTrack("ibs_print");
+			}catch(e){
+				// ignore tracking errors
+			}
+		
+		setTimeout(function() {
+			printIt();
+		}, 500);
+	}
+</script>
+
+<script language="javascript">
+	function trackAndSend(id, text) {
+		if(digitalData.event == undefined){
+			digitalData.event = [];
+		}
+		var events = digitalData.event;
+		var newEvent = createEvent("Send Job", "Send Job", "", "");
+		events.push(newEvent);
+		
+		
+			try{
+				ibsTrack("ibs_send_job");
+			}catch(e){
+				// ignore tracking errors
+			}
+		
+		setTimeout(function() {
+			submitSM('Send', '', id, text);
+		}, 500);
+	}
+</script>
+
+
+	
+	
+				
+		
+						
+		
+	
+	
+	
+		
+						
+		
+		
+				
+		
+	
+	
+	
+	
+
+
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td colspan="2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td width="6" height="6">&nbsp;<br /></td>
+<td valign="top" width="900">
+Corporate Division&nbsp;<b>Information technology</b>&nbsp;(Software development)&nbsp;<br>Division, located in&nbsp;<b>Ulm</b>&nbsp;	
+</td>
+<td width="10" rowspan="3" valign="top" height="1">&nbsp;<br /></td>
+<td width="135" rowspan="3" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="20" valign="top"><a onclick="trackAndExternalLink('Zum Geschaeftsbereich','http://www.bmwgroup.com/com/en/karriere/index.html', '_blank'); return false;" href="#"><img src='/ibs/images/common/en/unternehmen.gif' alt="" border="0"></a><br /></td>
+</tr>
+<tr>
+<td height="20" valign="top"><a onclick="trackAndExternalLink('Zum Unternehmensbereich','http://www.bmwgroup.com/com/en/karriere/stellenangebote/index.html', '_blank'); return false;" href="#"><img src='/ibs/images/common/en/unternehmensbereich.gif' border="0" alt=""></a><br /></td>
+</tr>
+<tr>
+<td height="20" valign="top"><a onclick="trackAndExternalLink('Zum Standort','http://www.bmwgroup.com/com/en/karriere/standorte/index.html', '_blank'); return false;" href="#"><img src='/ibs/images/common/en/standort.gif' border="0" alt=""></a><br /></td>
+</tr>
+<tr>
+<td height="20" valign="top"><a href="javascript:submitSM('RechtlicheHinweise', '', '', '');"><img src='/ibs/images/common/en/rechtlhinweise.gif' border="0" alt=""></a><br /></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><font class="hl1">Expert Machine Learning (m/f)</font></td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+<td valign="top">&nbsp;<br /></td>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td><font class="hl2">Tasks</font></td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+<td valign="top"><img src='/ibs/images/common/blue.gif' width="150" height="1" alt="" border="0"><br /></td>
+<td valign="top">&nbsp;</td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+Autonomous driving is a key component to meet the upcoming challenges of future mobility. We are looking for people that join us on this path by designing and developing software solutions for autonomous driving and driver assistance systems. We offer you a chance to join our international team at BMW Car IT in Ulm, a wholly owned subsidiary of BMW AG. As a member (m/f) of our team on onboard &amp; offboard environment model you are responsible for application and deployment of novel machine learning solutions at BMW. Based on your profound knowledge in machine learning algorithms as well as practical expertise in software development you will analyse prototypical approaches and provide market ready engineering solutions. Communicating and discussing complex technical aspects as well as practical boundary conditions with our internal partners is an essential part of your job. Working on core components, your contributions will have a significant impact on the customer experience throughout the BMW product portfolio. We expect that you share our enthusiasm for embedded software in automotive industry, that you bring fresh ideas and the ability to think outside the box. Join us in developing quality software solutions and shape with us the future of individual mobility.	
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+<td valign="top">&nbsp;<br /></td>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><font class="hl2">Qualification</font></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+<td valign="top"><img src='/ibs/images/common/blue.gif' width="150" height="1" alt="" border="0"><br /></td>
+<td valign="top">&nbsp;</td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Bachelor’s degree in Computer Science or a similar field of study. 
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Expert knowledge of (or Ph.D) machine learning or Data-Mining (for instance proven by a Ph.D.).
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Expert knowledge in programming C/C++.
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Expertise in one or more of the following areas is beneficial: Python, build systems (CMake), source code management tools (Git, SVN), embedded software development for real-time environments.
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Experience with Scrum and Team-Development Tools such as JIRA is beneficial.
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Good business English and German are mandatory.
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top">&nbsp;</td>
+<td>	
+•	Teamwork and communication skills.	
+</td>	
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+<td valign="top">&nbsp;</td>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<tr>
+<td class="i">&nbsp;</td>
+<td class="i">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td width="175"><b>Working hours:</b>
+&nbsp;Full-time&nbsp;
+</td>
+<td width="125">&nbsp;</td>
+<td width="150">&nbsp;</td>
+</tr>
+</table>
+</td>
+<td class="i">&nbsp;</td>
+<td class="i">&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td>&nbsp;</td>
+<td valign="top">&nbsp;</td>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><br /><font class="hl2">Contact person</font></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="20">&nbsp;<br /></td>
+<td valign="top"><img src='/ibs/images/common/blue.gif' width="150" height="1" alt="" border="0"><br /></td>
+<td valign="top">&nbsp;</td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<tr>
+<td>
+<p>&nbsp;</p>
+</td>
+<td>
+<table border="0">
+<tr valign="top">
+<!-- Beginn der Ansprechpartner 1 -->
+<!-- Intranet behandelt -->
+<td>
+Ms.&nbsp;Groebl
+<br>
+<br>
++49 89 382-17001
+<br>
+</td>
+<!-- Ende Ansprechpartner 1 -->
+<td><img src="/ibs/images/common/spacer.gif" width="60"></td>
+<!-- Beginn Ansprechpartner 2 -->
+<!-- Intranet behandelt -->
+<!-- Ende Ansprechpartner 2 -->
+<!-- Ende der Ansprechpartner -->
+</tr>
+</table>
+</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<!-- REL97_TS BEGIN -->
+<tr>
+<td>&nbsp;</td>
+<td>
+<p>Please submit your comprehensive online application (including cover letter quoting job reference number <b>100999</b>, details about your work experience and qualifications as well as certificates). We are looking forward to receiving your <a href="javascript:trackAndApply('Online application', '/ibs/Servlets/ibs/controller/obb?event=_reset&stelleId=60117947010004f6d4d0850e24297de9917c8089acf41e04');"><b><u>online application</u></b></a>. 
+</td>
+<td valign="top">&nbsp;</td>
+<td valign="top">&nbsp;</td>
+</tr>
+<!-- REL97_TS END -->
+<tr>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="10">&nbsp;<br /></td>
+<td valign="top" width="6" height="1">&nbsp;<br /></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>BMW AG<br>
+&nbsp;<br>
+Recruiting&nbsp;<br>
+80788&nbsp;München</td>
+<td width="10" rowspan="3" valign="top" height="1">&nbsp;<br /></td>
+<td width="135" rowspan="3" valign="top">
+<table border="0" cellspacing="0" cellpadding="0">
+<!-- REL97-TS CRQ-51981 -->
+<tr>
+<td height="20" valign="top"><a href="javascript:trackAndApply('Apply Online','/ibs/Servlets/ibs/controller/obb?event=_reset&stelleId=60117947010004f6d4d0850e24297de9917c8089acf41e04');"><img src='/ibs/images/sm/en/u_online_bewerben.gif' border="0" alt=""></a><br /></td>
+</tr>
+<tr>
+<td height="20" valign="top"><a href="javascript:trackAndPrint();"><img src='/ibs/images/sm/en/u_job_drucken.gif' border="0" alt=""></a><br /></td>
+</tr>
+<tr>
+<td height="20" valign="top"><a href="javascript:trackAndSend('100999', 'Expert Machine Learning (m/f)');"><img src='/ibs/images/sm/en/u_job_versenden.gif' border="0" alt=""></a><br /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</form>
+<pre>
+
+
+ </pre>
+<script type="text/javascript">
+	<!--
+	
+	//-->
+</script>
+
+
+
+
+
+	<script type="text/javascript">
+		try{
+			_satellite.track("page_load");
+			_satellite.pageBottom();
+		}catch(e){
+			// ignore tracking error
+		}
+	</script>
+
+</body>
+</html>

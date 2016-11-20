@@ -1,0 +1,90 @@
+https://recruiting.bmwgroup.de/ibs/Servlets/ibs/controller/satellit?event=__activate_and_reset&target=smstelleanzeigen&stellenreferenz=d89d75ba807ea0f1ae1f573adc9f34e26e76fbd83d382783&anzeige=veroeffentlichung
+ 
+
+
+ 
+
+ 
+ 
+
+ 
+Corporate Division Information technology (Software development) 
+Division, located in Ulm 	 
+
+
+
+
+ 	 
+ 	Expert Machine Learning (m/f)
+ 
+ 
+ 
+ 
+ 	Tasks	 	 
+ 
+
+ 	 
+ 	Autonomous driving is a key component to meet the upcoming challenges of future mobility. We are looking for people that join us on this path by designing and developing software solutions for autonomous driving and driver assistance systems. We offer you a chance to join our international team at BMW Car IT in Ulm, a wholly owned subsidiary of BMW AG. As a member (m/f) of our team on onboard & offboard environment model you are responsible for application and deployment of novel machine learning solutions at BMW. Based on your profound knowledge in machine learning algorithms as well as practical expertise in software development you will analyse prototypical approaches and provide market ready engineering solutions. Communicating and discussing complex technical aspects as well as practical boundary conditions with our internal partners is an essential part of your job. Working on core components, your contributions will have a significant impact on the customer experience throughout the BMW product portfolio. We expect that you share our enthusiasm for embedded software in automotive industry, that you bring fresh ideas and the ability to think outside the box. Join us in developing quality software solutions and shape with us the future of individual mobility.	 	 
+ 	 	 	 
+ 
+ 
+ 
+ 
+ 	Qualification	 	 
+ 
+
+ 	 
+ 	?	Bachelor¡¯s degree in Computer Science or a similar field of study.	 	 
+ 	?	Expert knowledge of (or Ph.D) machine learning or Data-Mining (for instance proven by a Ph.D.).	 	 
+ 	?	Expert knowledge in programming C/C++.	 	 
+ 	?	Expertise in one or more of the following areas is beneficial: Python, build systems (CMake), source code management tools (Git, SVN), embedded software development for real-time environments.	 	 
+ 	?	Experience with Scrum and Team-Development Tools such as JIRA is beneficial.	 	 
+ 	?	Good business English and German are mandatory.	 	 
+ 	?	Teamwork and communication skills.	 	 
+ 
+ 
+ 	 
+ 
+ 
+ 
+ 
+ 	
+Working hours:  Full-time 	 	 
+ 	 
+ 
+ 	 	 
+ 	
+Contact person	 	 
+ 
+
+ 	 
+ 
+
+Ms. Groebl 
+
++49 89 382-17001 
+
+ 	 
+ 
+ 
+ 
+ 
+ 	
+Please submit your comprehensive online application (including cover letter quoting job reference number 100999, details about your work experience and qualifications as well as certificates). We are looking forward to receiving your online application.
+
+ 	 
+ 
+ 
+ 
+ 
+ 	BMW AG
+ 
+Recruiting 
+80788 M¨¹nchen	 
+
+
+
+
+
+
+ 

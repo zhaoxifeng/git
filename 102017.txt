@@ -1,0 +1,95 @@
+https://recruiting.bmwgroup.de/ibs/Servlets/ibs/controller/satellit?event=__activate_and_reset&target=smstelleanzeigen&stellenreferenz=92ae091a7c8e967bab55fa7922276bed4dce7c25ee2e2e40&anzeige=veroeffentlichung
+ 
+
+
+ 
+
+ 
+ 
+
+ 
+Corporate Division Information technology (Software development) 
+Division, located in Ulm 	 
+
+
+
+
+ 	 
+ 	Software Developer HMI Infotainment (m/f)
+ 
+ 
+ 
+ 
+ 	Tasks	 	 
+ 
+
+ 	 
+ 	BMW Car IT GmbH, a wholly owned subsidiary of BMW AG, is a software company focused on the design and development of innovative software for future BMW Group automobiles. We create, evaluate and integrate software solutions working exclusively for the BMW Group, while also participating in open source communities, standardization efforts, funded research projects, and collaborations with universities.	 	 
+ 		 	 
+ 	We are offering you a challenging position in the field of HMI development for next generation Infotainment systems. Our area of responsibility is development of HMI applications, the HMI framework and also voice control for the infotainment system. As part of an international and highly motivated Scrum team you are writing code and automated tests, analyzing and solving technical problems as well as designing components and APIs. Furthermore, you will work within a modern development environment and developing a modern C++ code base using today¡¯s best software practices like git, code review, automated testing and CI.	 	 
+ 	 	 	 
+ 
+ 
+ 
+ 
+ 	Qualification	 	 
+ 
+
+ 	 
+ 	- Bachelor¡¯s degree in information technology or a comparable course of study.	 	 
+ 	- Experience in C++ programming.	 	 
+ 	- Practical experience in C++11, STL and Boost.	 	 
+ 	- In-depth understanding of object-oriented software development.	 	 
+ 	- Practical experience in Git / Gerrit and GTest / GMock.	 	 
+ 	- Familiar with agile processes and development / SW quality practices such as code reviews and CI.	 	 
+ 	- Experience with Linux development.	 	 
+ 	- Fluent business English, German would be a plus.	 	 
+ 	- Excellent teamwork and communication skills.	 	 
+ 	- Knowledge and experience with frameworks for application development and / or with speech technologies is a plus.	 	 
+ 
+ 
+ 	 
+ 
+ 
+ 
+ 
+ 	
+Working hours:  Full-time 	 	 
+ 	 
+ 
+ 	 	 
+ 	
+Contact person	 	 
+ 
+
+ 	 
+ 
+
+Ms. Groebl 
+
++49 89 382-17001 
+
+ 	 
+ 
+ 
+ 
+ 
+ 	
+Please submit your comprehensive online application (including cover letter quoting job reference number 102017, details about your work experience and qualifications as well as certificates). We are looking forward to receiving your online application.
+
+ 	 
+ 
+ 
+ 
+ 
+ 	BMW AG
+ 
+Recruiting 
+80788 M¨¹nchen	 
+
+
+
+
+
+
+ 
