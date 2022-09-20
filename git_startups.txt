@@ -1,0 +1,57 @@
+
+competitive free ware products: SVN, CVS, ... 
+competitive commercial products: perforce, dimensions, VSS, clear case
+
+git is lightweight, clear, stable, fast, smart, process configurable.
+git is implemented in a distributed way.
+git is easy to deal with baseline, branch
+
+installing git
+server side create repository
+server side authorization
+client side
+	git clone
+	some initial configurations
+	add user.name
+	add user.email
+	
+-----|
+|	git pull
+|	work development
+|	git add
+|	git commit
+|	git push
+|----|
+
+git frequently used commands: 
+git diff
+git log
+git add
+git commit
+git push
+git status
+git pull
+git fetch
+git merge
+
+git underlying conceptions:
+working tree, it is your working area
+index tree, it is the staging area
+local repository
+server repository
+
+
+Here is the usage  example to tag a commit as our baseline:
+git tag -m "detail status description for this baseline" tag_name commit_id
+•	tag_name: is a the tag name, space is not allowed probably
+•	commit_id: is the commit hash code given by git log, usually, front five letters are enough.
+
+To push the local tags to server, use below command:
+git push origin tag_name
+
+You can find  more detail from here:
+http://git-scm.com/book/en/v2/Git-Basics-Tagging
+
+
+
+

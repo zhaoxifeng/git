@@ -1,0 +1,5 @@
+how to use mirror of homebrew:
+https://lug.ustc.edu.cn/wiki/mirrors/help/homebrew-bottles
+how to use mirror of homrebrew source:
+https://lug.ustc.edu.cn/wiki/mirrors/help/brew.git
+
